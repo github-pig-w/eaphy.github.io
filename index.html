@@ -534,6 +534,170 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/09/12/Hexo-博客迁移/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="EAPHY">
+      <meta itemprop="description" content="专注于技术，厚积而薄发 !">
+      <meta itemprop="image" content="/img/touxiang.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Eaphy's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2022/09/12/Hexo-博客迁移/" class="post-title-link" itemprop="url">Hexo 博客迁移</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+	   
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2022-09-12 20:33:55" itemprop="dateCreated datePublished" datetime="2022-09-12T20:33:55+08:00">2022-09-12</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/网站运维/" itemprop="url" rel="index"><span itemprop="name">网站运维</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>最近新入手 Macbook Pro，使用了6年的 windows 电脑将逐渐被替换，因此需要将老电脑中的Hexo博客迁移至新电脑。由于习惯了目前的Next主题样式，不想更换到最新版，特需要将现在的所有环境版本同步到我的 Parallels Desktop 中的windows11中。</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2022/09/12/Hexo-博客迁移/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/06/SpringCloud-组件原理/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -798,7 +962,8 @@
 
       
         
-          <font color="red">ʅ（´◔౪◔）ʃ &nbsp&nbsp&nbsp  文章已加密，有缘自会相见 ！！！</font>
+          <h1 id="MQ-踩坑"><a href="#MQ-踩坑" class="headerlink" title="MQ 踩坑"></a>MQ 踩坑</h1><h2 id="坑一、消费者宕机，消息积压百万"><a href="#坑一、消费者宕机，消息积压百万" class="headerlink" title="坑一、消费者宕机，消息积压百万"></a>坑一、消费者宕机，消息积压百万</h2><p><strong>挖坑：</strong> 实际项目中有发生过消费者挂掉，导致mq积压了上百万的消息。</p>
+<p><strong>填坑：</strong> 首先向公司申请了一批机器，构建了一个多倍于原有队列的mq，并且为他们设定了各自的消费者，然后临时修改原有的宕机消费者代码，使其接收到消息后不再消费，而是直接发到新建的mq中，然后重启恢复挂掉的消费者，让新建的mq的消费者去快速消费。消费完毕后，撤掉新建的mq，恢复原有代码，填坑完毕。</p>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -1827,175 +1992,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/26/面试突击-基础篇/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="EAPHY">
-      <meta itemprop="description" content="专注于技术，厚积而薄发 !">
-      <meta itemprop="image" content="/img/touxiang.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Eaphy's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/08/26/面试突击-基础篇/" class="post-title-link" itemprop="url">面试突击-基础篇</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-	   
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-08-26 22:08:49" itemprop="dateCreated datePublished" datetime="2019-08-26T22:08:49+08:00">2019-08-26</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/面试相关/" itemprop="url" rel="index"><span itemprop="name">面试相关</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="HashMap"><a href="#HashMap" class="headerlink" title="HashMap"></a>HashMap</h1><h2 id="存储结构"><a href="#存储结构" class="headerlink" title="存储结构"></a>存储结构</h2><p>数组+链表+红黑树，链表的存在是为了解决hash冲突，当链表长度大于8的时候，后面的数据存放在红黑树中。</p>
-<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ol>
-<li>快速存储</li>
-<li>快速查找（时间复杂度为o(1)）</li>
-<li>可伸缩</li>
-<li>线程不安全
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/08/26/面试突击-基础篇/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </li></ol></div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2044,7 +2040,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">22</span>
+                    <span class="site-state-item-count">23</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
